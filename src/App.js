@@ -214,6 +214,7 @@ const App = () => {
       time = time + 25
     }
     if(userX === mode.size -10 && userY === mode.size -10) {
+      window.removeEventListener('keydown', controls)
       exitSound.current.play()
       score = time
       time = 0}
